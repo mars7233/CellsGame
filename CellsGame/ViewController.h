@@ -11,7 +11,11 @@
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIView *backgroundView;
+-(int *)getOldCells;
+-(int *)getNewCells;
 
+-(void)startGame;
+-(void)stopGame;
 
 - (IBAction)startButton:(id)sender;
 - (IBAction)stopButton:(id)sender;

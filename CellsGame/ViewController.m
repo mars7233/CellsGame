@@ -9,7 +9,6 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
@@ -89,12 +88,13 @@ int newCells[9][9];
     }
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
+//清除subview
 - (void)removeAllSubviews {
     while (_backgroundView.subviews.count) {
         UIView* child = _backgroundView.subviews.lastObject;
@@ -102,7 +102,7 @@ int newCells[9][9];
     }
 }
 
-- (IBAction)startButton:(id)sender {
+-(void)startGame{
     //刷新100次
     for (int i = 0; i< 100; i++){
         [self removeAllSubviews];
@@ -110,8 +110,7 @@ int newCells[9][9];
         [self drawCells];
     }
 }
-
-- (IBAction)stopButton:(id)sender {
+-(void)stopGame{
     [self removeAllSubviews];
     // 初始化细胞
     for(int i = 0;i<9;i++){
@@ -124,5 +123,19 @@ int newCells[9][9];
     [self drawCells];
 }
 
+- (IBAction)startButton:(id)sender {
+    [self startGame];
+}
+
+- (IBAction)stopButton:(id)sender {
+    [self stopGame];
+}
+
+-(int *)getOldCells{
+    return oldCells;
+}
+-(int *)getNewCells{
+    return newCells;
+}
 
 @end

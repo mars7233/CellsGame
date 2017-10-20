@@ -14,7 +14,18 @@
 		0B30337A1F7E60060013360A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3033791F7E60060013360A /* Assets.xcassets */; };
 		0B30337D1F7E60060013360A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B30337B1F7E60060013360A /* LaunchScreen.storyboard */; };
 		0B3033801F7E60060013360A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B30337F1F7E60060013360A /* main.m */; };
+		0BDCC80F1F9A0FD500F66185 /* CellsGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDCC80E1F9A0FD500F66185 /* CellsGameTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BDCC8111F9A0FD500F66185 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B3033621F7E60050013360A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B3033691F7E60050013360A;
+			remoteInfo = CellsGame;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0B30336A1F7E60050013360A /* CellsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +39,20 @@
 		0B30337C1F7E60060013360A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B30337E1F7E60060013360A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B30337F1F7E60060013360A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0BDCC80C1F9A0FD500F66185 /* CellsGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CellsGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDCC80E1F9A0FD500F66185 /* CellsGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellsGameTests.m; sourceTree = "<group>"; };
+		0BDCC8101F9A0FD500F66185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0B3033671F7E60050013360A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDCC8091F9A0FD500F66185 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				0B30336C1F7E60050013360A /* CellsGame */,
+				0BDCC80D1F9A0FD500F66185 /* CellsGameTests */,
 				0B30336B1F7E60050013360A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				0B30336A1F7E60050013360A /* CellsGame.app */,
+				0BDCC80C1F9A0FD500F66185 /* CellsGameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +95,15 @@
 				0B3033761F7E60060013360A /* CellsGame.xcdatamodeld */,
 			);
 			path = CellsGame;
+			sourceTree = "<group>";
+		};
+		0BDCC80D1F9A0FD500F66185 /* CellsGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BDCC80E1F9A0FD500F66185 /* CellsGameTests.m */,
+				0BDCC8101F9A0FD500F66185 /* Info.plist */,
+			);
+			path = CellsGameTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +126,24 @@
 			productReference = 0B30336A1F7E60050013360A /* CellsGame.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0BDCC80B1F9A0FD500F66185 /* CellsGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BDCC8151F9A0FD500F66185 /* Build configuration list for PBXNativeTarget "CellsGameTests" */;
+			buildPhases = (
+				0BDCC8081F9A0FD500F66185 /* Sources */,
+				0BDCC8091F9A0FD500F66185 /* Frameworks */,
+				0BDCC80A1F9A0FD500F66185 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BDCC8121F9A0FD500F66185 /* PBXTargetDependency */,
+			);
+			name = CellsGameTests;
+			productName = CellsGameTests;
+			productReference = 0BDCC80C1F9A0FD500F66185 /* CellsGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +156,11 @@
 					0B3033691F7E60050013360A = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+					};
+					0BDCC80B1F9A0FD500F66185 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B3033691F7E60050013360A;
 					};
 				};
 			};
@@ -123,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				0B3033691F7E60050013360A /* CellsGame */,
+				0BDCC80B1F9A0FD500F66185 /* CellsGameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +191,13 @@
 				0B30337D1F7E60060013360A /* LaunchScreen.storyboard in Resources */,
 				0B30337A1F7E60060013360A /* Assets.xcassets in Resources */,
 				0B3033751F7E60060013360A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDCC80A1F9A0FD500F66185 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +215,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0BDCC8081F9A0FD500F66185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDCC80F1F9A0FD500F66185 /* CellsGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BDCC8121F9A0FD500F66185 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B3033691F7E60050013360A /* CellsGame */;
+			targetProxy = 0BDCC8111F9A0FD500F66185 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0B3033731F7E60060013360A /* Main.storyboard */ = {
@@ -306,6 +385,36 @@
 			};
 			name = Release;
 		};
+		0BDCC8131F9A0FD500F66185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36LJPX8GN2;
+				INFOPLIST_FILE = CellsGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mars.CellsGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CellsGame.app/CellsGame";
+			};
+			name = Debug;
+		};
+		0BDCC8141F9A0FD500F66185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36LJPX8GN2;
+				INFOPLIST_FILE = CellsGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mars.CellsGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CellsGame.app/CellsGame";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +432,15 @@
 			buildConfigurations = (
 				0B3033841F7E60060013360A /* Debug */,
 				0B3033851F7E60060013360A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BDCC8151F9A0FD500F66185 /* Build configuration list for PBXNativeTarget "CellsGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BDCC8131F9A0FD500F66185 /* Debug */,
+				0BDCC8141F9A0FD500F66185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
